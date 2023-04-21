@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 4</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        alert("Bienvenidos")
+        alert("A continuación se pedirá el ingreso de 2 números que se van ha calcular")
+            //ingreso de los dos numero para realizar las operaciones
+        var num1 = parseInt(prompt("Ingrese el primer número"));
+        var num2 = parseInt(prompt("Ingrese el segundo número"));
+        //declaramos un contador para el numero de iteraciones, lo inicializamos en 0
+        var contador = 0;
+        //mientras que el valor de contador sea menor a 5 este realizará el bucle 5 veces
+        while (contador < 5) {
+            //el valor de contador determinará que caso debe escoger 
+            switch (contador) {
+                //cuando el valor de contador es 0 sumará los dos números
+                case 0:
+                    var suma = num1 + num2;
+                    alert("Iteración 1\nEl resultado de la suma de los valores " + num1 + " y " + num2 + " es: " + suma);
+                    break;
+                    //cuando el valor de contador es 1 restará los dos números
+                case 1:
+                    var resta = num1 - num2;
+                    alert("Iteración 2\nEl resultado de la resta de los valores " + num1 + " y " + num2 + " es: " + resta);
+                    break;
+                    //cuando el valor de contador es 2 multiplicará los dos números
+                case 2:
+                    var multiplicacion = num1 * num2;
+                    alert("Iteración 3\nEl resultado de la multiplicación de los valores " + num1 + " y " + num2 + " es: " + multiplicacion);
+                    break;
+                    //cuando el valor de contador es 3 dividirá los dos números
+                case 3:
+                    var division = num1 / num2;
+                    alert("Iteración 4\nEl resultado de la división entre el valor " + num1 + " y " + num2 + " es: " + division);
+                    break;
+                    //cuando el valor de contador es 4 calculará el módulo de los dos números
+                case 4:
+                    var modulo = num1 % num2;
+                    alert("Iteración 5\nEl resultado del módulo(%) entre el valor " + num1 + " y " + num2 + " es: " + modulo);
+                    break;
+            }
+            //cada vez que se realice un caso el contador incrementará en 1 para el siguiente caso
+            contador++;
+        }
+        alert("Gracias por su aporte!!!!")
+    </script>
+</body>
+
+</html>
